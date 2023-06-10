@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap&_v=20230609182939"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20230609182939">
+   <title>Account</title>
+</head>
+
+<body>
+   <div class="wrapper accountPage lock-padding">
+      <header class="header lock-padding" id="header">
+   <div class="container">
+      <div class="header__row">
+         <a href="index.html" class="header__logo">
+            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path
+                  d="M28.3806 9.27218H19.6084V0.5M28.3806 20.1084H19.6084V28.8806M0 9.27218H8.77218V0.5M0 20.1084H8.77218V28.8806"
+                  stroke="white" stroke-width="3.61207" />
+            </svg>
+            <span>PROTENDER</span>
+         </a>
+         <ul class="header__list">
+            <li>
+               <a href="search.html" class="header__link header-search"><span>Поиск</span></a>
+            </li>
+            <li>
+               <a href="favorites.html" class="header__link">
+                  Избранные</a>
+            </li>
+            <li>
+               <a href="#" class="header__link">
+                  Сопровождение</a>
+            </li>
+            <li>
+               <a href="#" class="header__link">
+                  Инструкции</a>
+            </li>
+            <li>
+               <a href="#" class="header__link">
+                  Видеокурс по закупкам</a>
+            </li>
+         </ul>
+         <div class="header__body header-body">
+            <div class="header__menu header-menu">
+               <div class="header-menu__title">Меню</div>
+               <ul class="header-menu__list">
+                  <li>
+                     <a class="header-menu__link" href="#">О сервисе</a>
+                  </li>
+                  <li>
+                     <a class="header-menu__link" href="#">Контакты</a>
+                  </li>
+                  <li>
+                     <a class="header-menu__link" href="#">Сопровождение</a>
+                  </li>
+               </ul>
+               <a href="#promocode" class="header-menu__sign modal__link">Выйти</a>
+               <a href="mailto:i@protender.pro" class="header-menu__mail">
+                  <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9.6 18.5L17.37 10.73H0.75V8.27H17.37L9.6 0.499999H13.05L22.05 9.5L13.05 18.5H9.6Z"
+                        fill="white" />
+                  </svg>
+                  <span>i@protender.pro</span>
+               </a>
+            </div>
+            <div class="header__copy header-copy">
+               <div class="header-copy__item">© PROTENDER, 2023</div>
+               <a href="#" class="header-copy__link">Политика конфиденциальности</a>
+            </div>
+         </div>
+         <ul class="header-account">
+            <li class="header-account__not header-not">
+               <a id="not1" class="header-not__link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M10 21H14C14 22.1 13.1 23 12 23C10.9 23 10 22.1 10 21ZM21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19ZM17 11C17 8.2 14.8 6 12 6C9.2 6 7 8.2 7 11V18H17V11Z"
+                        fill="white" />
+                  </svg>
+               </a>
+               <a href="#notifications" class="modal__link header-not__link_adapt">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M10 21H14C14 22.1 13.1 23 12 23C10.9 23 10 22.1 10 21ZM21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19ZM17 11C17 8.2 14.8 6 12 6C9.2 6 7 8.2 7 11V18H17V11Z"
+                        fill="white" />
+                  </svg>
+               </a>
+               <div class="notifications notifications_pc">
+   <ul class="notifications__list">
+      <li>
+         <div class="notification orange">
+            <div class="notification__title">
+               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M8.00065 13.3335C9.41514 13.3335 10.7717 12.7716 11.7719 11.7714C12.7721 10.7712 13.334 9.41465 13.334 8.00016C13.334 6.58567 12.7721 5.22912 11.7719 4.22893C10.7717 3.22873 9.41514 2.66683 8.00065 2.66683C6.58616 2.66683 5.22961 3.22873 4.22941 4.22893C3.22922 5.22912 2.66732 6.58567 2.66732 8.00016C2.66732 9.41465 3.22922 10.7712 4.22941 11.7714C5.22961 12.7716 6.58616 13.3335 8.00065 13.3335ZM8.00065 1.3335C8.87613 1.3335 9.74304 1.50593 10.5519 1.84097C11.3607 2.176 12.0956 2.66706 12.7147 3.28612C13.3338 3.90517 13.8248 4.6401 14.1598 5.44894C14.4949 6.25778 14.6673 7.12468 14.6673 8.00016C14.6673 9.76827 13.9649 11.464 12.7147 12.7142C11.4645 13.9645 9.76876 14.6668 8.00065 14.6668C4.31398 14.6668 1.33398 11.6668 1.33398 8.00016C1.33398 6.23205 2.03636 4.53636 3.28661 3.28612C4.53685 2.03588 6.23254 1.3335 8.00065 1.3335ZM8.33398 4.66683V8.16683L11.334 9.94683L10.834 10.7668L7.33398 8.66683V4.66683H8.33398Z"
+                     fill="#E76014" />
+               </svg>
+               <span>18 ч. до завершение приема заявок</span>
+            </div>
+            <div class="notification__text">(ПКР-011625-23) Выполнение работ по разработке проектной документации по
+               капитальному ремонту общего имущества многоквартирного(ых) дома(ов) и завершение работ по капитальному
+               ремонту общего имущества в многокварт…</div>
+            <div class="notification__time">24.04.2023, 23:54</div>
+         </div>
+      </li>
+      <li>
+         <div class="notification yellow">
+            <div class="notification__title">
+               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M8.00065 13.3335C9.41514 13.3335 10.7717 12.7716 11.7719 11.7714C12.7721 10.7712 13.334 9.41465 13.334 8.00016C13.334 6.58567 12.7721 5.22912 11.7719 4.22893C10.7717 3.22873 9.41514 2.66683 8.00065 2.66683C6.58616 2.66683 5.22961 3.22873 4.22941 4.22893C3.22922 5.22912 2.66732 6.58567 2.66732 8.00016C2.66732 9.41465 3.22922 10.7712 4.22941 11.7714C5.22961 12.7716 6.58616 13.3335 8.00065 13.3335ZM8.00065 1.3335C8.87613 1.3335 9.74304 1.50593 10.5519 1.84097C11.3607 2.176 12.0956 2.66706 12.7147 3.28612C13.3338 3.90517 13.8248 4.6401 14.1598 5.44894C14.4949 6.25778 14.6673 7.12468 14.6673 8.00016C14.6673 9.76827 13.9649 11.464 12.7147 12.7142C11.4645 13.9645 9.76876 14.6668 8.00065 14.6668C4.31398 14.6668 1.33398 11.6668 1.33398 8.00016C1.33398 6.23205 2.03636 4.53636 3.28661 3.28612C4.53685 2.03588 6.23254 1.3335 8.00065 1.3335ZM8.33398 4.66683V8.16683L11.334 9.94683L10.834 10.7668L7.33398 8.66683V4.66683H8.33398Z"
+                     fill="#E76014" />
+               </svg>
+               <span>18 ч. до завершение приема заявок</span>
+            </div>
+            <div class="notification__text">(ПКР-011625-23) Выполнение работ по разработке проектной документации по
+               капитальному ремонту общего имущества многоквартирного(ых) дома(ов) и завершение работ по капитальному
+               ремонту общего имущества в многокварт…</div>
+            <div class="notification__time">24.04.2023, 23:54</div>
+         </div>
+      </li>
+      <li>
+         <div class="notification green">
+            <div class="notification__title">
+               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M8.00065 13.3335C9.41514 13.3335 10.7717 12.7716 11.7719 11.7714C12.7721 10.7712 13.334 9.41465 13.334 8.00016C13.334 6.58567 12.7721 5.22912 11.7719 4.22893C10.7717 3.22873 9.41514 2.66683 8.00065 2.66683C6.58616 2.66683 5.22961 3.22873 4.22941 4.22893C3.22922 5.22912 2.66732 6.58567 2.66732 8.00016C2.66732 9.41465 3.22922 10.7712 4.22941 11.7714C5.22961 12.7716 6.58616 13.3335 8.00065 13.3335ZM8.00065 1.3335C8.87613 1.3335 9.74304 1.50593 10.5519 1.84097C11.3607 2.176 12.0956 2.66706 12.7147 3.28612C13.3338 3.90517 13.8248 4.6401 14.1598 5.44894C14.4949 6.25778 14.6673 7.12468 14.6673 8.00016C14.6673 9.76827 13.9649 11.464 12.7147 12.7142C11.4645 13.9645 9.76876 14.6668 8.00065 14.6668C4.31398 14.6668 1.33398 11.6668 1.33398 8.00016C1.33398 6.23205 2.03636 4.53636 3.28661 3.28612C4.53685 2.03588 6.23254 1.3335 8.00065 1.3335ZM8.33398 4.66683V8.16683L11.334 9.94683L10.834 10.7668L7.33398 8.66683V4.66683H8.33398Z"
+                     fill="#E76014" />
+               </svg>
+               <span>18 ч. до завершение приема заявок</span>
+            </div>
+            <div class="notification__text">(ПКР-011625-23) Выполнение работ по разработке проектной документации по
+               капитальному ремонту общего имущества многоквартирного(ых) дома(ов) и завершение работ по капитальному
+               ремонту общего имущества в многокварт…</div>
+            <div class="notification__time">24.04.2023, 23:54</div>
+         </div>
+      </li>
+      <li>
+         <div class="notification blue">
+            <div class="notification__title">
+               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M8 14C11.3 14 14 11.3 14 8C14 4.7 11.3 2 8 2C4.7 2 2 4.7 2 8C2 11.3 4.7 14 8 14ZM8.18 5.174C8.3 5.066 8.444 5 8.6 5C8.762 5 8.9 5.066 9.026 5.174C9.14 5.3 9.2 5.444 9.2 5.6C9.2 5.762 9.14 5.9 9.026 6.026C8.9 6.14 8.762 6.2 8.6 6.2C8.444 6.2 8.3 6.14 8.18 6.026C8.066 5.9 8 5.762 8 5.6C8 5.444 8.066 5.3 8.18 5.174ZM6.68 7.982C6.68 7.982 7.982 6.95 8.456 6.908C8.9 6.872 8.81 7.382 8.768 7.646L8.762 7.682C8.678 8 8.576 8.384 8.474 8.75C8.246 9.584 8.024 10.4 8.078 10.55C8.138 10.754 8.51 10.496 8.78 10.316C8.816 10.292 8.846 10.268 8.876 10.25C8.876 10.25 8.924 10.202 8.972 10.268C8.984 10.286 8.996 10.304 9.008 10.316C9.062 10.4 9.092 10.43 9.02 10.478L8.996 10.49C8.864 10.58 8.3 10.976 8.072 11.12C7.826 11.282 6.884 11.822 7.028 10.772C7.154 10.034 7.322 9.398 7.454 8.9C7.7 8 7.808 7.592 7.256 7.946C7.034 8.078 6.902 8.162 6.824 8.216C6.758 8.264 6.752 8.264 6.71 8.186L6.692 8.15L6.662 8.102C6.62 8.042 6.62 8.036 6.68 7.982Z"
+                     fill="#81B6DD" />
+               </svg>
+               <span>18 ч. до завершение приема заявок</span>
+            </div>
+            <div class="notification__text">(ПКР-011625-23) Выполнение работ по разработке проектной документации по
+               капитальному ремонту общего имущества многоквартирного(ых) дома(ов) и завершение работ по капитальному
+               ремонту общего имущества в многокварт…</div>
+            <div class="notification__time">24.04.2023, 23:54</div>
+         </div>
+      </li>
+   </ul>
+   <a href="#" class="notifications__link">Настроить уведомления</a>
+</div>
+<div class="modal notifications notifications_mobile" id="notifications">
+   <div class="modal__content notifications__content">
+      <div class="notifications__row">
+         <div class="notifications__title account-title">
+            Уведомления
+         </div>
+         <div class="modal__close notifications__close">
+            <img src="img/icons/notifications__close.svg" alt="">
+         </div>
+      </div>
+      <ul class="notifications__list">
+         <li>
+            <div class="notification orange">
+               <div class="notification__row">
+                  <div class="notification__title">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8.00065 13.3335C9.41514 13.3335 10.7717 12.7716 11.7719 11.7714C12.7721 10.7712 13.334 9.41465 13.334 8.00016C13.334 6.58567 12.7721 5.22912 11.7719 4.22893C10.7717 3.22873 9.41514 2.66683 8.00065 2.66683C6.58616 2.66683 5.22961 3.22873 4.22941 4.22893C3.22922 5.22912 2.66732 6.58567 2.66732 8.00016C2.66732 9.41465 3.22922 10.7712 4.22941 11.7714C5.22961 12.7716 6.58616 13.3335 8.00065 13.3335ZM8.00065 1.3335C8.87613 1.3335 9.74304 1.50593 10.5519 1.84097C11.3607 2.176 12.0956 2.66706 12.7147 3.28612C13.3338 3.90517 13.8248 4.6401 14.1598 5.44894C14.4949 6.25778 14.6673 7.12468 14.6673 8.00016C14.6673 9.76827 13.9649 11.464 12.7147 12.7142C11.4645 13.9645 9.76876 14.6668 8.00065 14.6668C4.31398 14.6668 1.33398 11.6668 1.33398 8.00016C1.33398 6.23205 2.03636 4.53636 3.28661 3.28612C4.53685 2.03588 6.23254 1.3335 8.00065 1.3335ZM8.33398 4.66683V8.16683L11.334 9.94683L10.834 10.7668L7.33398 8.66683V4.66683H8.33398Z"
+                           fill="#E76014" />
+                     </svg>
+                     <span>18 ч. до завершение приема заявок</span>
+                  </div>
+                  <div class="notification__time">24.04.2023, 23:54</div>
+               </div>
+               <div class="notification__text">(ПКР-011625-23) Выполнение работ по разработке проектной документации по
+                  капитальному ремонту общего имущества многоквартирного(ых) дома(ов) и завершение работ по капитальному
+                  ремонту общего имущества в многокварт…</div>
+               <div class="notification__time adapt">24.04.2023, 23:54</div>
+            </div>
+         </li>
+         <li>
+            <div class="notification green">
+               <div class="notification__row">
+                  <div class="notification__title">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8.00065 13.3335C9.41514 13.3335 10.7717 12.7716 11.7719 11.7714C12.7721 10.7712 13.334 9.41465 13.334 8.00016C13.334 6.58567 12.7721 5.22912 11.7719 4.22893C10.7717 3.22873 9.41514 2.66683 8.00065 2.66683C6.58616 2.66683 5.22961 3.22873 4.22941 4.22893C3.22922 5.22912 2.66732 6.58567 2.66732 8.00016C2.66732 9.41465 3.22922 10.7712 4.22941 11.7714C5.22961 12.7716 6.58616 13.3335 8.00065 13.3335ZM8.00065 1.3335C8.87613 1.3335 9.74304 1.50593 10.5519 1.84097C11.3607 2.176 12.0956 2.66706 12.7147 3.28612C13.3338 3.90517 13.8248 4.6401 14.1598 5.44894C14.4949 6.25778 14.6673 7.12468 14.6673 8.00016C14.6673 9.76827 13.9649 11.464 12.7147 12.7142C11.4645 13.9645 9.76876 14.6668 8.00065 14.6668C4.31398 14.6668 1.33398 11.6668 1.33398 8.00016C1.33398 6.23205 2.03636 4.53636 3.28661 3.28612C4.53685 2.03588 6.23254 1.3335 8.00065 1.3335ZM8.33398 4.66683V8.16683L11.334 9.94683L10.834 10.7668L7.33398 8.66683V4.66683H8.33398Z"
+                           fill="#E76014" />
+                     </svg>
+                     <span>18 ч. до завершение приема заявок</span>
+                  </div>
+                  <div class="notification__time">24.04.2023, 23:54</div>
+               </div>
+               <div class="notification__text">(ПКР-011625-23) Выполнение работ по разработке проектной документации по
+                  капитальному ремонту общего имущества многоквартирного(ых) дома(ов) и завершение работ по капитальному
+                  ремонту общего имущества в многокварт…</div>
+               <div class="notification__time adapt">24.04.2023, 23:54</div>
+            </div>
+         </li>
+         <li>
+            <div class="notification yellow">
+               <div class="notification__row">
+                  <div class="notification__title">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8.00065 13.3335C9.41514 13.3335 10.7717 12.7716 11.7719 11.7714C12.7721 10.7712 13.334 9.41465 13.334 8.00016C13.334 6.58567 12.7721 5.22912 11.7719 4.22893C10.7717 3.22873 9.41514 2.66683 8.00065 2.66683C6.58616 2.66683 5.22961 3.22873 4.22941 4.22893C3.22922 5.22912 2.66732 6.58567 2.66732 8.00016C2.66732 9.41465 3.22922 10.7712 4.22941 11.7714C5.22961 12.7716 6.58616 13.3335 8.00065 13.3335ZM8.00065 1.3335C8.87613 1.3335 9.74304 1.50593 10.5519 1.84097C11.3607 2.176 12.0956 2.66706 12.7147 3.28612C13.3338 3.90517 13.8248 4.6401 14.1598 5.44894C14.4949 6.25778 14.6673 7.12468 14.6673 8.00016C14.6673 9.76827 13.9649 11.464 12.7147 12.7142C11.4645 13.9645 9.76876 14.6668 8.00065 14.6668C4.31398 14.6668 1.33398 11.6668 1.33398 8.00016C1.33398 6.23205 2.03636 4.53636 3.28661 3.28612C4.53685 2.03588 6.23254 1.3335 8.00065 1.3335ZM8.33398 4.66683V8.16683L11.334 9.94683L10.834 10.7668L7.33398 8.66683V4.66683H8.33398Z"
+                           fill="#E76014" />
+                     </svg>
+                     <span>18 ч. до завершение приема заявок</span>
+                  </div>
+                  <div class="notification__time">24.04.2023, 23:54</div>
+               </div>
+               <div class="notification__text">(ПКР-011625-23) Выполнение работ по разработке проектной документации по
+                  капитальному ремонту общего имущества многоквартирного(ых) дома(ов) и завершение работ по капитальному
+                  ремонту общего имущества в многокварт…</div>
+               <div class="notification__time adapt">24.04.2023, 23:54</div>
+            </div>
+         </li>
+         <li>
+            <div class="notification green">
+               <div class="notification__row">
+                  <div class="notification__title">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8.00065 13.3335C9.41514 13.3335 10.7717 12.7716 11.7719 11.7714C12.7721 10.7712 13.334 9.41465 13.334 8.00016C13.334 6.58567 12.7721 5.22912 11.7719 4.22893C10.7717 3.22873 9.41514 2.66683 8.00065 2.66683C6.58616 2.66683 5.22961 3.22873 4.22941 4.22893C3.22922 5.22912 2.66732 6.58567 2.66732 8.00016C2.66732 9.41465 3.22922 10.7712 4.22941 11.7714C5.22961 12.7716 6.58616 13.3335 8.00065 13.3335ZM8.00065 1.3335C8.87613 1.3335 9.74304 1.50593 10.5519 1.84097C11.3607 2.176 12.0956 2.66706 12.7147 3.28612C13.3338 3.90517 13.8248 4.6401 14.1598 5.44894C14.4949 6.25778 14.6673 7.12468 14.6673 8.00016C14.6673 9.76827 13.9649 11.464 12.7147 12.7142C11.4645 13.9645 9.76876 14.6668 8.00065 14.6668C4.31398 14.6668 1.33398 11.6668 1.33398 8.00016C1.33398 6.23205 2.03636 4.53636 3.28661 3.28612C4.53685 2.03588 6.23254 1.3335 8.00065 1.3335ZM8.33398 4.66683V8.16683L11.334 9.94683L10.834 10.7668L7.33398 8.66683V4.66683H8.33398Z"
+                           fill="#E76014" />
+                     </svg>
+                     <span>18 ч. до завершение приема заявок</span>
+                  </div>
+                  <div class="notification__time">24.04.2023, 23:54</div>
+               </div>
+               <div class="notification__text">(ПКР-011625-23) Выполнение работ по разработке проектной документации по
+                  капитальному ремонту общего имущества многоквартирного(ых) дома(ов) и завершение работ по капитальному
+                  ремонту общего имущества в многокварт…</div>
+               <div class="notification__time adapt">24.04.2023, 23:54</div>
+            </div>
+         </li>
+         <li>
+            <div class="notification yellow">
+               <div class="notification__row">
+                  <div class="notification__title">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8.00065 13.3335C9.41514 13.3335 10.7717 12.7716 11.7719 11.7714C12.7721 10.7712 13.334 9.41465 13.334 8.00016C13.334 6.58567 12.7721 5.22912 11.7719 4.22893C10.7717 3.22873 9.41514 2.66683 8.00065 2.66683C6.58616 2.66683 5.22961 3.22873 4.22941 4.22893C3.22922 5.22912 2.66732 6.58567 2.66732 8.00016C2.66732 9.41465 3.22922 10.7712 4.22941 11.7714C5.22961 12.7716 6.58616 13.3335 8.00065 13.3335ZM8.00065 1.3335C8.87613 1.3335 9.74304 1.50593 10.5519 1.84097C11.3607 2.176 12.0956 2.66706 12.7147 3.28612C13.3338 3.90517 13.8248 4.6401 14.1598 5.44894C14.4949 6.25778 14.6673 7.12468 14.6673 8.00016C14.6673 9.76827 13.9649 11.464 12.7147 12.7142C11.4645 13.9645 9.76876 14.6668 8.00065 14.6668C4.31398 14.6668 1.33398 11.6668 1.33398 8.00016C1.33398 6.23205 2.03636 4.53636 3.28661 3.28612C4.53685 2.03588 6.23254 1.3335 8.00065 1.3335ZM8.33398 4.66683V8.16683L11.334 9.94683L10.834 10.7668L7.33398 8.66683V4.66683H8.33398Z"
+                           fill="#E76014" />
+                     </svg>
+                     <span>18 ч. до завершение приема заявок</span>
+                  </div>
+                  <div class="notification__time">24.04.2023, 23:54</div>
+               </div>
+               <div class="notification__text">(ПКР-011625-23) Выполнение работ по разработке проектной документации по
+                  капитальному ремонту общего имущества многоквартирного(ых) дома(ов) и завершение работ по капитальному
+                  ремонту общего имущества в многокварт…</div>
+               <div class="notification__time adapt">24.04.2023, 23:54</div>
+            </div>
+         </li>
+         <li>
+            <div class="notification orange">
+               <div class="notification__row">
+                  <div class="notification__title">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8.00065 13.3335C9.41514 13.3335 10.7717 12.7716 11.7719 11.7714C12.7721 10.7712 13.334 9.41465 13.334 8.00016C13.334 6.58567 12.7721 5.22912 11.7719 4.22893C10.7717 3.22873 9.41514 2.66683 8.00065 2.66683C6.58616 2.66683 5.22961 3.22873 4.22941 4.22893C3.22922 5.22912 2.66732 6.58567 2.66732 8.00016C2.66732 9.41465 3.22922 10.7712 4.22941 11.7714C5.22961 12.7716 6.58616 13.3335 8.00065 13.3335ZM8.00065 1.3335C8.87613 1.3335 9.74304 1.50593 10.5519 1.84097C11.3607 2.176 12.0956 2.66706 12.7147 3.28612C13.3338 3.90517 13.8248 4.6401 14.1598 5.44894C14.4949 6.25778 14.6673 7.12468 14.6673 8.00016C14.6673 9.76827 13.9649 11.464 12.7147 12.7142C11.4645 13.9645 9.76876 14.6668 8.00065 14.6668C4.31398 14.6668 1.33398 11.6668 1.33398 8.00016C1.33398 6.23205 2.03636 4.53636 3.28661 3.28612C4.53685 2.03588 6.23254 1.3335 8.00065 1.3335ZM8.33398 4.66683V8.16683L11.334 9.94683L10.834 10.7668L7.33398 8.66683V4.66683H8.33398Z"
+                           fill="#E76014" />
+                     </svg>
+                     <span>18 ч. до завершение приема заявок</span>
+                  </div>
+                  <div class="notification__time">24.04.2023, 23:54</div>
+               </div>
+               <div class="notification__text">(ПКР-011625-23) Выполнение работ по разработке проектной документации по
+                  капитальному ремонту общего имущества многоквартирного(ых) дома(ов) и завершение работ по капитальному
+                  ремонту общего имущества в многокварт…</div>
+               <div class="notification__time adapt">24.04.2023, 23:54</div>
+            </div>
+         </li>
+      </ul>
+      <a href="#" class="notifications__link">Настроить уведомления</a>
+   </div>
+</div>
+            </li>
+            <li class="header-account__activities">
+               <a href="account.html" class="header-account__user">
+                  <div class="header-account__image">
+                     <picture><source srcset="img/account/account-user.webp" type="image/webp"><img src="img/account/account-user.png" alt=""></picture>
+                  </div>
+                  <span>Сергей Иванов</span>
+               </a>
+               <a href="index.html" class="header-account__exit">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.66659 2.66683C2.66659 1.93045 3.26354 1.3335 3.99992 1.3335H11.9999C12.7363 1.3335 13.3333 1.93045 13.3333 2.66683V13.3335C13.3333 14.0699 12.7363 14.6668 11.9999 14.6668H3.99992C3.26354 14.6668 2.66659 14.0699 2.66659 13.3335V10.3079H3.99992V13.3335H11.9999L11.9999 2.66683L3.99992 2.66683V5.69247H2.66659V2.66683Z"
+                        fill="white" />
+                     <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.13799 4.86209L10.2761 8.00016L7.13799 11.1382L6.19518 10.1954L7.72378 8.66683H1.33325V7.3335H7.72378L6.19518 5.8049L7.13799 4.86209Z"
+                        fill="white" />
+                  </svg>
+               </a>
+            </li>
+
+         </ul>
+         <div class="header__burger burger-btn">
+            <button><span></span></button>
+            <span class="show">Меню</span>
+            <span class="close">Закрыть</span>
+         </div>
+      </div>
+   </div>
+</header>
+      <main class="main">
+         <section class="info">
+            <div class="container">
+               <div class="info__grid">
+                  <div class="profile card">
+                     <div class="profile__title account-title">
+                        Профиль
+                     </div>
+                     <div class="profile__row">
+                        <ul class="profile__list">
+                           <li class="profile__item">
+                              <span>Имя</span>
+                              <input type="text">
+                           </li>
+                           <li class="profile__item">
+                              <span>E-mail</span>
+                              <input type="text">
+                           </li>
+                           <li class="profile__item">
+                              <span>Телефон</span>
+                              <input type="text">
+                           </li>
+                           <li class="profile__item">
+                              <span>ИНН</span>
+                              <input type="text">
+                           </li>
+                        </ul>
+                        <div class="profile__user profile-user">
+                           <div class="profile-user__image">
+                              <picture><source srcset="img/account/account-user.webp" type="image/webp"><img src="img/account/account-user.png" alt=""></picture>
+                           </div>
+                           <span class="profile-user__edit">
+                              Изменить
+                           </span>
+                        </div>
+                     </div>
+                     <div class="profile__buttons">
+                        <a href="#" class="profile__btn btn">Изменить E-mail</a>
+                        <a href="#" class="profile__btn btn">Изменить пароль</a>
+                     </div>
+                  </div>
+                  <div class="subscribe card">
+                     <div class="subscribe__title account-title"><span>лонг</span> 1 год</div>
+                     <div class="subscribe__prefs">
+                        <div class="subscribe__pref">
+                           Количество запросов <br> не ограничено
+                        </div>
+                        <div class="subscribe__pref">
+                           Количество устройств <br> не ограничено
+                        </div>
+                     </div>
+                     <div class="subscribe__row">
+                        <div class="subscribe__auto">
+                           <input type="checkbox" id="subscribeAuto">
+                           <label for="subscribeAuto"></label>
+                           <span>Автопродление</span>
+                        </div>
+                        <div class="subscribe__remind">
+                           <span>До окончания: 4 мес, 12 дн</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="promo card">
+                     <div class="promo__title account-title">Промокод</div>
+                     <div class="promo__row">
+                        <input type="text" class="promo__input" placeholder="Введите промокод">
+                        <button class="promo__btn btn">Применить</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="actions">
+            <div class="container">
+               <div class="actions__row">
+                  <div class="actions-feedback actions__card">
+                     <div class="actions-feedback__title account-title">Обратная связь</div>
+                     <div class="actions-feedback__desc action__text">Напишите нам в случае возникновения вопросов</div>
+                     <ul class="actions-feedback__list">
+                        <li class="actions-feedback__theme actions-feedback__item">
+                           <span class="action__text">Тема</span>
+                           <input type="text">
+                        </li>
+                        <li class="actions-feedback__message actions-feedback__item">
+                           <span class="action__text">Текст сообщения</span>
+                           <textarea name="" id="" cols="30" rows="10">
+
+                           </textarea>
+                        </li>
+                     </ul>
+                     <button class="actions-feedback__btn btn" type="submit">Отправить</button>
+                  </div>
+                  <div class="actions-settings actions__card">
+                     <div class="actions-settings__title account-title">Настройка уведомлений</div>
+                     <div class="actions-settings__main">
+                        <div class="actions-settings__mail">
+                           <input type="checkbox" name="" id="actionsSettingsMail">
+                           <label for="actionsSettingsMail">
+                           </label>
+                           <span class="action__text">Отправлять уведомления на почту за 5 дней до завершения приема
+                              заявок на избранные закупки</span>
+                        </div>
+                        <div class="actions-settings__not">
+                           <p>
+                              <span class="big">Уведомления шаблонов</span>
+                              <span class="small">Будем присылать уведомления о появлении новых закупок по
+                                 шаблонам</span>
+                           </p>
+                        </div>
+                        <ul class="actions-settings__list">
+                           <li>
+                              <input type="checkbox" id="actionsSettings1">
+                              <label for="actionsSettings1"></label>
+                              <p class="action__text">Тендеры по проектной документации</p>
+                           </li>
+                           <li>
+                              <input type="checkbox" id="actionsSettings2">
+                              <label for="actionsSettings2"></label>
+                              <p class="action__text">Этап Приём заявок , с начальной ценой от Р 500 000. 2 отрасли</p>
+                           </li>
+                           <li>
+                              <input type="checkbox" id="actionsSettings3">
+                              <label for="actionsSettings3"></label>
+                              <p class="action__text">Этап «Приём заявок», «Работа комиссии», «Завершён», «Отменён» .
+                                 Дата окончания тендера
+                                 по 16.04.2023, с начальной ценой контракта от Р 30 000 000 до Р 200 000 000</p>
+                           </li>
+                           <li>
+                              <input type="checkbox" id="actionsSettings4">
+                              <label for="actionsSettings4"></label>
+                              <p class="action__text">Этап «Приём заявок», «Работа комиссии», «Завершён», «Отменён» .
+                                 Дата окончания тендера
+                                 по 16.04.2023</p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+   <div class="container">
+      <div class="footer__card">
+         <div class="footer__column">
+            <div class="footer__grid">
+               <a href="index.html" class="footer__logo">
+                  <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M28.3806 9.27218H19.6084V0.5M28.3806 20.1084H19.6084V28.8806M0 9.27218H8.77218V0.5M0 20.1084H8.77218V28.8806"
+                        stroke="white" stroke-width="3.61207" />
+                  </svg>
+                  <span>PROTENDER</span>
+               </a>
+               <ul class="footer__list">
+                  <li>
+                     <a href="#" class="footer__link">О сервисе</a>
+                  </li>
+                  <li>
+                     <a href="#" class="footer__link">Контакты</a>
+                  </li>
+                  <li>
+                     <a href="#" class="footer__link">Сопровождение</a>
+                  </li>
+               </ul>
+               <a href="#" class="footer__sign">Войти</a>
+               <a href="mailto:i@protender.pro" class="footer__mail">i@protender.pro</a>
+            </div>
+            <div class="footer-copy">
+               <div class="footer-copy__brand">© PROTENDER, 2023</div>
+               <a href="#" class="footer-copy__politic">Политика конфиденциальности</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230609182939"></script>
+   <script src="js/app.min.js?_v=20230609182939"></script>
+</body>
+
+</html>
