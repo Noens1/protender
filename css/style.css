@@ -10235,7 +10235,7 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 24px;
-  width: 586px;
+  width: 450px;
 }
 
 .escortPage .questions__input {
@@ -10261,8 +10261,8 @@ h6 {
 }
 
 .escortPage .questions__input textarea {
-  min-width: 586px;
-  max-width: 586px;
+  min-width: 450px;
+  max-width: 450px;
   min-height: 120px;
   max-height: 120px;
   border-radius: 8px;
@@ -12817,6 +12817,15 @@ body.lock {
     line-height: 1.5384615385;
   }
 
+  .escortPage .questions__main {
+    width: 350px;
+  }
+
+  .escortPage .questions__input textarea {
+    min-width: 350px;
+    max-width: 350px;
+  }
+
   .videocoursePage .videos__grid {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
@@ -14532,6 +14541,14 @@ body.lock {
     line-height: 1.5384615385;
   }
 
+  .tenderPage .require__list {
+    padding-left: 0;
+  }
+
+  .tenderPage .require__list li {
+    list-style: none;
+  }
+
   .tenderPage .members__card {
     padding: 16px;
   }
@@ -14803,7 +14820,7 @@ body.lock {
   }
 
   .escortPage .questions__main {
-    width: 435px;
+    width: 350px;
   }
 
   .escortPage .questions__input input {
@@ -14814,8 +14831,8 @@ body.lock {
   }
 
   .escortPage .questions__input textarea {
-    min-width: 435px;
-    max-width: 435px;
+    min-width: 350px;
+    max-width: 350px;
     min-height: 104px;
     max-height: 104px;
     padding: 8px;
